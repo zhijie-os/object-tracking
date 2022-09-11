@@ -23528,7 +23528,11 @@ cvOutput.addEventListener("click", e => {
   }
 });
 navigator.mediaDevices.getUserMedia({
-  video: true,
+  video: {
+    facingMode: {
+      exact: 'environment'
+    }
+  },
   audio: false
 }).then(async function (stream) {
   // get video stream
