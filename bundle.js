@@ -23543,7 +23543,7 @@ navigator.mediaDevices.getUserMedia({
 
   dst = new cv.Mat(720, 1280, cv.CV_8UC4);
   cap = new cv.VideoCapture(inputVideo);
-  const FPS = 30;
+  const FPS = 60;
 
   function processVideo() {
     try {
